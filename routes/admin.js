@@ -7,7 +7,6 @@ router.post('/createAdmin',async (req,res)=>{
     if(!admin){
         res.send({error:'Admin not created'})
     }
-
     res.send({status:'Admin Successfully Created'})
 })
 
