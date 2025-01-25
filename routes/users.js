@@ -23,7 +23,7 @@ router.get('/:id', async (req, res)=>{
 }
 )
 
-router.post('/',async (req, res)=>{
+router.post('/users',async (req, res)=>{
             const user = await User.create(req.body)
             if(!user){
                 return res.status(400).send({error: 'User could not be created'})
